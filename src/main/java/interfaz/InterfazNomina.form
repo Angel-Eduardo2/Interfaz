@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents/>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="taller 7 nomina"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout">
+    <Property name="horizontalGap" type="int" value="8"/>
+    <Property name="verticalGap" type="int" value="8"/>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="panelSuperior">
+      <Properties/>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="java.awt.BorderLayout.NORTH"/>
+      </Constraints>
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout">
+        <Property name="horizontalGap" type="int" value="8"/>
+        <Property name="verticalGap" type="int" value="8"/>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="panelDatos">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="TitledBorderInfo">
+                <TitledBorder title="datos del empleado"/>
+              </Border>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="java.awt.BorderLayout.CENTER"/>
+          </Constraints>
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+            <Property name="columns" type="int" value="2"/>
+            <Property name="rows" type="int" value="4"/>
+            <Property name="horizontalGap" type="int" value="8"/>
+            <Property name="verticalGap" type="int" value="8"/>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="lblNombre">
+              <Properties><Property name="text" type="java.lang.String" value="nombre"/></Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtNombre"/>
+            <Component class="javax.swing.JLabel" name="lblSalario">
+              <Properties><Property name="text" type="java.lang.String" value="salario fijo"/></Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtSalario"/>
+            <Component class="javax.swing.JLabel" name="lblTarifa">
+              <Properties><Property name="text" type="java.lang.String" value="tarifa por hora"/></Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtTarifa"/>
+            <Component class="javax.swing.JLabel" name="lblHoras">
+              <Properties><Property name="text" type="java.lang.String" value="horas"/></Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtHoras"/>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="panelBotones">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="java.awt.BorderLayout.SOUTH"/>
+          </Constraints>
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+            <Property name="columns" type="int" value="4"/>
+            <Property name="rows" type="int" value="1"/>
+            <Property name="horizontalGap" type="int" value="8"/>
+            <Property name="verticalGap" type="int" value="8"/>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="btnAgregarFijo">
+              <Properties><Property name="text" type="java.lang.String" value="agregar fijo"/></Properties>
+              <Events><EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAgregarFijoActionPerformed"/></Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnAgregarHoras">
+              <Properties><Property name="text" type="java.lang.String" value="agregar por horas"/></Properties>
+              <Events><EventHandler event="actionPerformed" listener="java.awt.event.ActionEvent" parameters="java.awt.event.ActionEvent" handler="btnAgregarHorasActionPerformed"/></Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnMostrar">
+              <Properties><Property name="text" type="java.lang.String" value="mostrar empleados"/></Properties>
+              <Events><EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMostrarActionPerformed"/></Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnLimpiar">
+              <Properties><Property name="text" type="java.lang.String" value="limpiar"/></Properties>
+              <Events><EventHandler event="actionPerformed" listener="java.awt.event.ActionEvent" parameters="java.awt.event.ActionEvent" handler="btnLimpiarActionPerformed"/></Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="scrollResultado">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="java.awt.BorderLayout.CENTER"/>
+      </Constraints>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="areaResultado">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
